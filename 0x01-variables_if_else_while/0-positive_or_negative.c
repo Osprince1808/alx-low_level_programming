@@ -1,13 +1,13 @@
 #include <stdlib.h>
-#include <time.h
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - prints a random number and states wether 
+ *          it is positive, negative, or zero.
  *
- * Return: Always 0 (Success/correct)
+ * Return: Always 0.
  */
-
 int main(void)
 {
 int n;
@@ -15,23 +15,14 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-if (n==0)
-{
-printf("% is zero\n", n);
-}
-else if (n<0) 
-{printf("% is negative\n", n);
-}
-
-
+if (n > 1)
+printf("%d is positive\n", n);
+else if (n < 0) 
+printf("%d is negative\n", n);
 else 
-{
-printf("%i is positive \n", n);
-}
 
+printf("%d is zero \n", n);
 
 retun (0); 
-
-
 }
 
