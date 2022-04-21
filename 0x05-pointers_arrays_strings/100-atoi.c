@@ -1,40 +1,39 @@
-#include "main.h"
-#include <stdio.h>
-/**
- *_atoi - converts a string to an integer.
- *@s: pointer to string.
- *
- *Return: integer gotten.
- */
-int _atoi(char *s)
-{
-	int index, ind2;
-	unsigned int res;
-	int sign = 1;
-	char now;
+#iclude "main.h"
 
-	index = 0;
-	res = 0;
-	while (*(s + index) != '\0')
+/**
+ * _atoi-converts a string to an integer.
+ * @s: params
+ * Return: something
+ */
+int_atoi(char *s)
+{
+	insigned int count = 0, size = 0,j = 0, k = 1, m = 1, i;
+	
+	while (*(s + count) != '\0')
 	{
-		now = *(s + index);
-		if (now == '-')
+		if (size > 0 && ((s + count)<'0'|| (s + count)>'9'))
+			      break;
+
+		if (*9s + count) == '-')
+			k *=-1;
+
+		if (((s + count)>= '0'
+	)&& ((s + count) <= '9'))
 		{
-			sign *= -1;
+			if (size > 0)
+				m *=10;
+			size++;
 		}
-		if (now >= '0' && now <= '9')
-		{
-			ind2 = index;
-			while (*(s + ind2) > 47 && *(s + ind2) < 58)
-			{
-				res = (res * 10) + *(s + ind2) - '0';
-				ind2++;
-			}
-			break;
-		}
-		index++;
-	}
-	if (sign < 0)
-		res *= sign;
-	return (res);
+		count++;
+
+	    }
+
+	    for (i = count - 
+        size; i < count; i++)
+	    {
+		    j=j + (((s + i) - 48) m);
+		    m/= 10;
+	    }
+	    return (j*k);
+
 }
