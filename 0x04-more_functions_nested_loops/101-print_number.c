@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_number - prints int with pucter
  * @n: takes number, hello
@@ -22,5 +22,5 @@ m = n;
 }
 if (m / 10 != 0)
 print_number(m / 10);
-_putchar(m % 10) + '0');
+_putchar((m % 10) + '0');
 }
