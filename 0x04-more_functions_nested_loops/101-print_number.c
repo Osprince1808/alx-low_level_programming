@@ -1,22 +1,26 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer
- * @n: tracked var
+ * print_number - prints int with pucter
+ * @n: takes number, hello
+ *
+ * Return: void
  */
 
 void print_number(int n)
 {
-	unsigned int x = n;
+unsigned int m;
 
-	if (n < 0)
-	{
-		_putchar(45);
-		x = -x;
-	}
-	if ((x / 10) > 0)
-	{
-		print_number(x / 10);
-	}
-	_putchar((x % 10) + 48);
+if (n < 0)
+{
+_putchar('-');
+m = -n;
+}
+else
+{
+m = n;
+}
+if (m / 10 != 0)
+print_number(m / 10);
+_putchar(m % 10) + '0');
 }
