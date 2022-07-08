@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*print number  - prints int with putcher
+*print number - prints int with putcher
 *@n: takes number  , hello
 *
 *Return: void
 */
 
-void print_number(int  n)
+void print_number(int n)
 {
 unsigned int m;
 
@@ -22,7 +22,7 @@ m = n;
 }
 if (m / 10 != 0)
 Print number (m / 10);
-Putcher  ((m  % 10)  +  0’);
+Putcher((m % 10) + '0’);
 }
 
 
