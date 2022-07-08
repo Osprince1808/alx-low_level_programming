@@ -24,5 +24,3 @@ if (m / 10 != 0)
 Print number (m / 10);
 Putcher((m % 10) + '0’);
 }
-
-
