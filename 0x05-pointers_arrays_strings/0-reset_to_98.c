@@ -1,13 +1,11 @@
+#include "main.h"
+
 /**
- * reset_to_98 - takes apointer to an int parameter
- *               and updates the values it points to 98
- *
- * @n: int parameter
- *
- * Return: Nothing
+ * reset_to_98 - updates the value *n points to.
+ * @n: the number to modify.
  */
 
 void reset_to_98(int *n)
 {
-*n = 98;
+	*n = 98;
 }
