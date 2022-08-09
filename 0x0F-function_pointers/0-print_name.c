@@ -3,7 +3,7 @@
  * @name: input name.
  * @f: function pointer.
  *
- * Return: no return.
+ * Return: void.
  */
 void print_name(char *name, void (*f)(char *))
 {
