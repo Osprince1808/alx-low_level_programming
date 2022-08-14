@@ -2,8 +2,8 @@
 /**
  * array_iterator - function that executes function given as param.
  * @array: array of elements.
- * @size: size of the array.
- * @action: pointer to the function.
+ * @size: size of array.
+ * @action: function pointer.
  *
  * Return: void.
  */
